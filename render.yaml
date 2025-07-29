@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: mk-training-center-backend
+    runtime: docker
+    repo: https://github.com/lyon125/mk-training-center-backend
+    branch: main
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: SPRING_DATASOURCE_URL
+        value: jdbc:postgresql://<your-db-host>:5432/mk_registration_db
+      - key: SPRING_DATASOURCE_USERNAME
+        value: <your-db-username>
+      - key: SPRING_DATASOURCE_PASSWORD
+        value: <your-db-password>
+    plan: free
