@@ -7,7 +7,7 @@ services:
     dockerfilePath: Dockerfile
     envVars:
       - key: SPRING_DATASOURCE_URL
-        value: jdbc:postgresql://dpg-d249f6buibrs73adb200-a/mk_registration_db
+        value: jdbc:postgresql://dpg-d249f6buibrs73adb200-a.oregon-postgres.render.com/mk_registration_db
       - key: SPRING_DATASOURCE_USERNAME
         value: mk_registration_db_user
       - key: SPRING_DATASOURCE_PASSWORD
